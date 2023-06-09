@@ -8,7 +8,7 @@ public class FactorialWithDoWhileLoop {
         int number = scanner.nextInt();
 
         long factorialOfNumber = 1;
-        int i = 2;
+        int i = 1;
 
         do {
             factorialOfNumber *= i++;
