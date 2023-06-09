@@ -11,8 +11,7 @@ public class FactorialWithDoWhileLoop {
         int i = 2;
 
         do {
-            factorialOfNumber *= i;
-            i++;
+            factorialOfNumber *= i++;
         } while  (i <= number);
 
         System.out.println("The factorial of your number is " + factorialOfNumber);
