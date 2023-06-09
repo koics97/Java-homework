@@ -17,5 +17,7 @@ public class FactorialWithDoWhileLoop {
 
         System.out.println("The factorial of your number is " + factorialOfNumber);
 
+        scanner.close();
+
     }
 }
