@@ -21,5 +21,7 @@ public class StrangePolynomialSum {
         }
         System.out.println("The result of the sum of the polynomials is: " + sumOfThePolynomials);
 
+        scanner.close();
+
     }
 }
