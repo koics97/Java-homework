@@ -8,11 +8,10 @@ public class SquareNumberLister {
         int number = getNumberFromUser(scanner);
 
         listSquareNumbers(number);
-
     }
 
     static void listSquareNumbers(int number) {
-        for (int i = 1; getSquareNumber(i) < number; i++) {
+        for (int i = 1; getSquareNumber(i) <= number; i++) {
             System.out.println(getSquareNumber(i));
         }
     }
