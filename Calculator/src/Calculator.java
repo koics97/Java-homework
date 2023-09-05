@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class Calculator {
-    static String giveTwoNumbers = "Please type two numbers";
-    static String giveANumber = "Please type a number";
+   private static final String giveTwoNumbers = "Please type two numbers";
+   private static final String giveANumber = "Please type a number";
     public static void main(String[] args) {
         System.out.println("What do you wanna do: ");
         System.out.println("1 - Addition");
@@ -45,7 +45,6 @@ public class Calculator {
             case 9:
                 performSquareRoot(scanner);
                 break;
-            default:
         }
         scanner.close();
     }
