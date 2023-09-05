@@ -32,6 +32,6 @@ public class SquareNumberLister {
 
 
     static int getSquareNumber(int number) {
-        return number * number;
+        return  number * number;
     }
 }

@@ -7,6 +7,10 @@ public class SquareNumberListerTest {
     void testGetSquareNumber(){
         Assertions.assertEquals(4,SquareNumberLister.getSquareNumber(2));
         Assertions.assertEquals(64, SquareNumberLister.getSquareNumber(8));
+        Assertions.assertEquals(100, SquareNumberLister.getSquareNumber(10));
+        Assertions.assertEquals(2500, SquareNumberLister.getSquareNumber(50));
+        Assertions.assertEquals(1600, SquareNumberLister.getSquareNumber(40));
+
     }
 
     @Test
