@@ -5,7 +5,6 @@ public enum Genre {
 
     @Override
     public String toString() {
-        //return this.toString().toLowerCase();
         switch (this) {
             case HORROR -> {
                 return "horrorsztori";
