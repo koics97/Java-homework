@@ -29,9 +29,9 @@ public class Main {
         System.out.println(books.get(28));
     }
 
-    static boolean isRentable(){
+    static boolean isRentable() {
         Random random = new Random();
-        int randomNumber = random.nextInt(10-1)+1;
+        int randomNumber = random.nextInt(10 - 1) + 1;
         return randomNumber % 2 == 0;
     }
 }

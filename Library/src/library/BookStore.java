@@ -23,13 +23,13 @@ public class BookStore {
     @Override
     public String toString() {
         return String.format("""
-                %d darab könyv van összese, amiből %d kölcsönözhető.\r
-                %d darab %s van, amiből %d kölcsönözhető.\r
-                %d darab %s van, amiből %d kölcsönözhető.\r
-                %d darab %s van, amiből %d kölcsönözhető.
-                """,getAllBooks(),getRentableBooks(),
+                        %d darab könyv van összese, amiből %d kölcsönözhető.\r
+                        %d darab %s van, amiből %d kölcsönözhető.\r
+                        %d darab %s van, amiből %d kölcsönözhető.\r
+                        %d darab %s van, amiből %d kölcsönözhető.
+                        """, getAllBooks(), getRentableBooks(),
                 getBooks(Genre.HORROR), Genre.HORROR, getRentableBooks(Genre.HORROR),
-                getBooks(Genre.ADVENTURE), Genre.ADVENTURE,getRentableBooks(Genre.ADVENTURE),
+                getBooks(Genre.ADVENTURE), Genre.ADVENTURE, getRentableBooks(Genre.ADVENTURE),
                 getBooks(Genre.ROMANTIC), Genre.ROMANTIC, getRentableBooks(Genre.ROMANTIC));
     }
 
