@@ -1,9 +1,9 @@
 package library;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,11 +27,11 @@ public class Main {
         System.out.println(bookStore);
 
         System.out.println(books.get(28));
+        ThreadLocalRandom.current().nextBoolean();
     }
 
     static boolean isRentable() {
         Random random = new Random();
-        int randomNumber = random.nextInt(10 - 1) + 1;
-        return randomNumber % 2 == 0;
+        return random.nextBoolean();
     }
 }

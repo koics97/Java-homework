@@ -23,9 +23,9 @@ public class BookStore {
     @Override
     public String toString() {
         return String.format("""
-                        %d darab könyv van összese, amiből %d kölcsönözhető.\r
-                        %d darab %s van, amiből %d kölcsönözhető.\r
-                        %d darab %s van, amiből %d kölcsönözhető.\r
+                        %d darab könyv van összesen, amiből %d kölcsönözhető.
+                        %d darab %s van, amiből %d kölcsönözhető.
+                        %d darab %s van, amiből %d kölcsönözhető.
                         %d darab %s van, amiből %d kölcsönözhető.
                         """, getAllBooks(), getRentableBooks(),
                 getBooks(Genre.HORROR), Genre.HORROR, getRentableBooks(Genre.HORROR),
