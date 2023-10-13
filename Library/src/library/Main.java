@@ -3,7 +3,6 @@ package library;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,7 +26,6 @@ public class Main {
         System.out.println(bookStore);
 
         System.out.println(books.get(28));
-        ThreadLocalRandom.current().nextBoolean();
     }
 
     static boolean isRentable() {
