@@ -36,7 +36,7 @@ public class TestMethods {
 
         Map<String, Integer> result = wac.countWords(strings.get(0));
 
-        Assertions.assertEquals(countedWords,result);
+        Assertions.assertEquals(countedWords, result);
     }
 
     static Stream<List<String>> provideSameStringInDifferentCombination() {
@@ -49,5 +49,19 @@ public class TestMethods {
                 List.of("macska kutya tehén Tehén Macska"),
                 List.of("kutya macska tehén Tehén Macska")
         );
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = {2, 3, 5, 7, 11, 13, 17})
+    void shouldReturnTrueToIsPrime(int number) {
+        WordsAndChars wac = new WordsAndChars();
+        Assertions.assertTrue(wac.isPrime(number));
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = {4, 6, 8, 10, 12, 14, 16})
+    void shouldReturnFalseToIsPrime(int number) {
+        WordsAndChars wac = new WordsAndChars();
+        Assertions.assertFalse(wac.isPrime(number));
     }
 }
