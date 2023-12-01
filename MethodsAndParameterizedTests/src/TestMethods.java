@@ -25,8 +25,8 @@ public class TestMethods {
     }
 
     @ParameterizedTest
-    @MethodSource("provideSameStringInDifferentCombination")
-    void shouldReturnCountedWords(List<String> strings) {
+    @MethodSource("provideSameStringInDifferentCombinations")
+    void expectedWordFrequencies(List<String> strings) {
         WordsAndChars wac = new WordsAndChars();
         Map<String, Integer> countedWords = new HashMap<>();
         countedWords.put("macska", 2);
@@ -38,7 +38,7 @@ public class TestMethods {
         Assertions.assertEquals(countedWords, result);
     }
 
-    static Stream<List<String>> provideSameStringInDifferentCombination() {
+    static Stream<List<String>> provideSameStringInDifferentCombinations() {
         return Stream.of(
                 List.of("macska Macska tehén Tehén kutya"),
                 List.of("macska tehén Macska Tehén kutya"),
@@ -58,7 +58,7 @@ public class TestMethods {
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {4, 6, 8, 10, 12, 14, 16})
+    @ValueSource(ints = {0, 1, 4, 6, 8, 10, 12, 14, 16})
     void shouldReturnFalseToIsPrime(int number) {
         WordsAndChars wac = new WordsAndChars();
         Assertions.assertFalse(wac.isPrime(number));

@@ -1,12 +1,12 @@
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class WordsAndChars {
 
     boolean areUniqueCharacters(String text) {
-        List<Character> characters = new ArrayList<>();
+        Set<Character> characters = new HashSet<>();
         for (int i = 0; i < text.length(); i++) {
             char character = text.charAt(i);
             if (characters.contains(character)) {
@@ -33,6 +33,9 @@ public class WordsAndChars {
     }
 
     boolean isPrime(int number) {
+        if(number == 0 || number == 1){
+            return false;
+        }
         for (int i = 2; i <= Math.sqrt(number); i++) {
             if (number % i == 0) {
                 return false;
