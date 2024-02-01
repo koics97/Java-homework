@@ -123,6 +123,4 @@ public class NumberConverter {
         System.out.println(numberInEnglish);
         scanner.close();
     }
-
-
 }
