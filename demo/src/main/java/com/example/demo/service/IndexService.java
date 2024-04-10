@@ -7,8 +7,8 @@ import java.time.LocalDate;
 
 @Service
 @AllArgsConstructor
-public class IndexService{
-    public LocalDate getDate(){
+public class IndexService {
+    public LocalDate getDate() {
         return LocalDate.now();
     }
 }

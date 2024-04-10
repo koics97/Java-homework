@@ -5,7 +5,7 @@ import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity(name = "something")
+@Entity(name = "people")
 @Getter
 @Setter
 public class People {

@@ -7,7 +7,9 @@ import java.time.Period;
 import java.util.List;
 
 public interface PeopleRepository extends JpaRepository<People, Integer> {
-   List<People> findByName(String name);
-   List<People> findByAge(int age);
-   List<People> findByNameAndAge(String name, int age);
+    List<People> findByName(String name);
+
+    List<People> findByAge(int age);
+
+    List<People> findByNameAndAge(String name, int age);
 }
